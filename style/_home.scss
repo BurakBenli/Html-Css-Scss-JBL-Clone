@@ -1,0 +1,32 @@
+.home{
+
+    &__container{
+        display: flex;
+        padding: 112px 16px;
+        border: 1px solid red;
+        position: relative;
+    }
+
+    &__content{
+        position: relative;
+        justify-self: center;
+        display: grid;
+        border: 1px solid red;
+    }
+
+    &__img{
+      width: 220px;  
+    }
+
+    &__title{
+        font-size: var(--biggest-font-size);
+        color: var(--first-color);
+        position: absolute;
+        top: -32px;
+        display: flex;
+        column-gap: 7px;
+        justify-self: center;
+    }
+
+   
+}

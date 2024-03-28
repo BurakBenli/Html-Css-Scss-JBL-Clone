@@ -1,0 +1,33 @@
+.header{
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    padding: 5px 20px;
+    top: 0;
+    left: 0;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: var(--header-height);
+        &__logo{
+            color: var(--first-color);
+            font-size: 30px;
+            font-weight: var(--font-semi-bold);
+        }
+        &__list{
+            display: flex;
+            column-gap: 50px;
+        }
+        &__link{
+            color: var(--white-color);
+            white-space: nowrap;
+            font-weight: var(--font-medium);
+            transition: color 0.4s;
+            &:hover{
+                color: var(--first-color);
+                
+            }
+        }
+    }
+}

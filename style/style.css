@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  padding: 5px 20px;
+  top: 0;
+  left: 0;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+.header .nav__logo {
+  color: var(--first-color);
+  font-size: 30px;
+  font-weight: var(--font-semi-bold);
+}
+.header .nav__list {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.header .nav__link {
+  color: var(--white-color);
+  white-space: nowrap;
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+.header .nav__link:hover {
+  color: var(--first-color);
+}
+
+.home__container {
+  display: flex;
+  padding: 112px 16px;
+  border: 1px solid red;
+  position: relative;
+}
+.home__content {
+  position: relative;
+  justify-self: center;
+  display: grid;
+  border: 1px solid red;
+}
+.home__img {
+  width: 220px;
+}
+.home__title {
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  position: absolute;
+  top: -32px;
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  justify-self: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(23, 100%, 50%);
+  --gradient-color: linear-gradient(
+    90deg,
+    hsl(23, 4%, 28%) 0%,
+    hsl(23, 4%, 8%) 100%
+  );
+  --white-color: hsl(0, 0%, 100%);
+  --text-color: hsl(23, 4%, 60%);
+  --body-color: hsl(23, 12%, 4%);
+  --container-color: hsl(23, 4%, 10%);
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4 {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.container {
+  max-width: 1120px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}/*# sourceMappingURL=style.css.map */
